@@ -13,4 +13,9 @@ class CTAGlobalAnchor extends CTA
         GlobalAnchorLink::class,
         GlobalAnchors::class
     ];
+
+    public function getGlobalAnchors()
+    {
+        return GlobalAnchors::get_anchors();
+    }
 }
