@@ -4,7 +4,7 @@ A SilverStripe module providing basic Button/Call-to-Action data objects built u
 
 ## Requirements
 
-* [silverstripe-framework](https://github.com/silverstripe/silverstripe-framework) ^4
+* [silverstripe-framework](https://github.com/silverstripe/silverstripe-framework) ^4 or ^5
 
 ## Installation
 
