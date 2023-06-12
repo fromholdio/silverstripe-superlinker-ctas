@@ -11,7 +11,7 @@ class CTA extends SuperLink
     private static $plural_name = 'Calls to Action';
 
     private static $summary_fields = [
-        'Title' => 'Link',
-        'Link' => 'URL'
+        'Title',
+        'URL'
     ];
 }
