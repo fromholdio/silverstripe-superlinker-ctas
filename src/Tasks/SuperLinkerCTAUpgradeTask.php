@@ -2,24 +2,9 @@
 
 namespace Fromholdio\SuperLinkerCTAs\Tasks;
 
-use AustralianEggs\Website\Core\Model\AssociateMember;
-use AustralianEggs\Website\FAQ\Model\FAQ;
-use AustralianEggs\Website\FAQ\Model\FAQTag;
-use AustralianEggs\Website\ImageLibrary\Model\ImageLibraryCategory;
-use AustralianEggs\Website\Recipes\Model\RecipeCategory;
-use AustralianEggs\Website\Recipes\Model\RecipeDiet;
-use AustralianEggs\Website\Recipes\Model\RecipeOccasion;
-use AustralianEggs\Website\Recipes\Model\RecipeStyle;
-use AustralianEggs\Website\Recipes\Pages\RecipePage;
-use AustralianEggs\Website\Research\Model\RDProjectCategory;
-use AustralianEggs\Website\Research\Model\RDProjectTag;
-use Fromholdio\SimpleVideo\Model\SimpleVideo;
-use SilverStripe\Assets\File;
-use SilverStripe\Assets\Folder;
 use SilverStripe\Control\Director;
 use SilverStripe\Dev\BuildTask;
 use SilverStripe\ORM\DB;
-use SilverStripe\Versioned\Versioned;
 
 class SuperLinkerCTAUpgradeTask extends BuildTask
 {
