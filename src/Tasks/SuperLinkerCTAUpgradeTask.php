@@ -2,9 +2,11 @@
 
 namespace Fromholdio\SuperLinkerCTAs\Tasks;
 
+use Fromholdio\SuperLinkerCTAs\Model\CTA;
 use SilverStripe\Control\Director;
 use SilverStripe\Dev\BuildTask;
 use SilverStripe\ORM\DB;
+use SilverStripe\Versioned\Versioned;
 
 class SuperLinkerCTAUpgradeTask extends BuildTask
 {
@@ -225,10 +227,12 @@ EOT;
     {
         $this->log("clean up tables... ", false);
 
-        $query = "DROP TABLE IF EXISTS CTA_Live";
-        DB::query($query);
-        $query = "DROP TABLE IF EXISTS CTA_Versions";
-        DB::query($query);
+        if (!CTA::has_extension(Versioned::class)) {
+            $query = "DROP TABLE IF EXISTS CTA_Live";
+            DB::query($query);
+            $query = "DROP TABLE IF EXISTS CTA_Versions";
+            DB::query($query);
+        }
 
         $this->log("done.");
     }
