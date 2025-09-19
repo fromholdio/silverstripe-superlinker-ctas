@@ -1,6 +1,6 @@
 # silverstripe-superlinker-ctas
 
-Requires Silverstripe 5+
+Requires Silverstripe 6+
 
 Has been basically superseded by Superlinker v3.x. This will be installable for existing sites, but for new sites it's recommended you simply implement any subclasses of Superlinker on a per-project basis, if even needed.
 
@@ -10,7 +10,7 @@ A SilverStripe module providing basic Button/Call-to-Action data objects built u
 
 ## Requirements
 
-* [silverstripe-framework](https://github.com/silverstripe/silverstripe-framework) ^5
+* [silverstripe-framework](https://github.com/silverstripe/silverstripe-framework) ^6
 
 ## Installation
 
